@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\System">
+      <UniqueIdentifier>{aa4e8e32-1ee4-4421-96b5-f9f956de043d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System\Input">
+      <UniqueIdentifier>{9c0e25a7-7e7e-4b89-b742-012b54fb0dc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game">
+      <UniqueIdentifier>{3968243e-b5ab-4bd6-9315-ecf7d215203b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game">
+      <UniqueIdentifier>{eca0082e-3e81-4380-b2c6-059ea0cf6d95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Base">
+      <UniqueIdentifier>{3f54694e-4423-482d-a81f-a3b642420239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Base">
+      <UniqueIdentifier>{9acbcb77-b750-41da-99b1-83ce36cd59c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System">
+      <UniqueIdentifier>{dd2451c7-64a6-4f84-972b-85af8d77dcfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System\Input">
+      <UniqueIdentifier>{85c753b8-a7d5-46b0-b11e-df9a59f68695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Scene">
+      <UniqueIdentifier>{8ec44721-2a35-4e4b-b953-d7d5ada629e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Scene">
+      <UniqueIdentifier>{703fb290-c796-429e-a62f-949f030e6e81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Scene\PlayScene">
+      <UniqueIdentifier>{1ea30682-0921-4bbd-bf03-e636af228376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Scene\PlayScene">
+      <UniqueIdentifier>{1578509f-5485-4c19-ad1e-c9146faf5dda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Scene\PlayScene\PlayBase">
+      <UniqueIdentifier>{277c6e13-b782-47ed-9118-9b2b415b150a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Scene\PlayScene\PlayBase">
+      <UniqueIdentifier>{d3d7eb23-1592-4db0-af46-5a5329e99b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Game\Enemy">
+      <UniqueIdentifier>{359a81ae-f4f8-4a3a-a74b-b14c03cecabb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Enemy">
+      <UniqueIdentifier>{743727e4-12e4-47ee-b548-c7494ba25284}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\InputPad.h">
+      <Filter>ヘッダー ファイル\System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputMouse.h">
+      <Filter>ヘッダー ファイル\System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputKey.h">
+      <Filter>ヘッダー ファイル\System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WinMain.h">
+      <Filter>ヘッダー ファイル\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameMain.h">
+      <Filter>ヘッダー ファイル\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hit.h">
+      <Filter>ヘッダー ファイル\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Pos.h">
+      <Filter>ヘッダー ファイル\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Base.h">
+      <Filter>ヘッダー ファイル\Game\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EndScoene.h">
+      <Filter>ヘッダー ファイル\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HardPlay.h">
+      <Filter>ヘッダー ファイル\Game\Scene\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ModeSelectScene.h">
+      <Filter>ヘッダー ファイル\Game\Scene\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NormalPlay.h">
+      <Filter>ヘッダー ファイル\Game\Scene\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayScene.h">
+      <Filter>ヘッダー ファイル\Game\Scene\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayBase.h">
+      <Filter>ヘッダー ファイル\Game\Scene\PlayScene\PlayBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Enemy.h">
+      <Filter>ヘッダー ファイル\Game\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MovePlayer.h">
+      <Filter>ヘッダー ファイル\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Title.h">
+      <Filter>ヘッダー ファイル\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tutorial.h">
+      <Filter>ヘッダー ファイル\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EasyPlay.h">
+      <Filter>ヘッダー ファイル\Game\Scene\PlayScene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\InputKey.cpp">
+      <Filter>ソース ファイル\System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputMouse.cpp">
+      <Filter>ソース ファイル\System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputPad.cpp">
+      <Filter>ソース ファイル\System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameMain.cpp">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WinMain.cpp">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hit.cpp">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pos.cpp">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Base.cpp">
+      <Filter>ソース ファイル\Game\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayScene.cpp">
+      <Filter>ソース ファイル\Game\Scene\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ModeSelectScene.cpp">
+      <Filter>ソース ファイル\Game\Scene\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EasyPlay.cpp">
+      <Filter>ソース ファイル\Game\Scene\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HardPlay.cpp">
+      <Filter>ソース ファイル\Game\Scene\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NormalPlay.cpp">
+      <Filter>ソース ファイル\Game\Scene\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Title.cpp">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayBase.cpp">
+      <Filter>ソース ファイル\Game\Scene\PlayScene\PlayBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Enemy.cpp">
+      <Filter>ソース ファイル\Game\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EndScoene.cpp">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovePlayer.cpp">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tutorial.cpp">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
