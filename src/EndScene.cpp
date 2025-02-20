@@ -18,7 +18,7 @@ EndScene::EndScene()
 
 }
 
-EndScoene::~EndScene()
+EndScene::~EndScene()
 {
 }
 

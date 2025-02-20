@@ -8,7 +8,7 @@
 #include "HardPlay.h"
 #include "PlayScene.h"
 #include "Enemy.h"
-#include "Endscoene.h"
+#include "Endscene.h"
 // =====================================================
 //	グローバル変数
 //	複数の関数で共通して使いたい変数はここに書く
@@ -28,9 +28,9 @@ enum  Scene // 各シーン
 // オブジェクトの宣言
 // -------------------------
 Base base;             //Base タイトルシーンの切り替えをするため
-PlayScene play_scene;     // プレイシーン
+PlayScene playscene;     // プレイシーン
 Title title;           // タイトル
-EndScoene end_scene;     // エンディングシーン
+EndScene endscene;     // エンディングシーン
 
 // -------------------------
  
@@ -47,8 +47,8 @@ int count = 10;
 void GameInit()
 {
 	title.Init();
-	play_scene.Init();
-	end_scene.Init();
+	playscene.Init();
+	endscene.Init();
 
 }
 
@@ -72,13 +72,13 @@ void GameUpdate()
 		}
 		break;
 	case GAMEMAIN_SCENE:
-		play_scene.Update();
-		if (play_scene.IsChange()) {
+		playscene.Update();
+		if (playscene.IsChange()) {
 			scene_change = 2;
 		}
 		break;
 	case END_SCENE:
-		end_scene.Update();
+		endscene.Update();
 		if (IsKeyOn(KEY_INPUT_SPACE)) {
 			scene_change = 3;
 		}
@@ -116,11 +116,11 @@ void GameDraw()
 		break;
 
 	case GAMEMAIN_SCENE:
-		play_scene.Draw();
+		playscene.Draw();
 		break;
 
 	case END_SCENE:
-		end_scene.Draw();
+		endscene.Draw();
 		DrawString(20, 425, "SKIP >> SPACE", GetColor(255, 255, 255));
 		break;
 	case CLEAN:
@@ -140,6 +140,6 @@ void GameExit()
 {
 	// 各クラスの終了処理
 	title.Exit();
-	play_scene.Exit();
-	end_scene.Exit();
+	playscene.Exit();
+	endscene.Exit();
 }

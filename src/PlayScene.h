@@ -5,7 +5,7 @@ constexpr auto CLOSE_CURTAIN_MAX = 18; // カーテンの閉じる画像の数
 constexpr auto GAME_STRAT = 240; // ゲームシーンに行く前の処理を終わらせる値
 constexpr auto GAME_END = 150; // ゲームシーンを終わてる魏の処理を始める値
 constexpr auto FRAME_IMSGE_MAX = 3; // フレーム画像の数
-constexpr auto PLAY_TIME_MAX = 3600; // プレイタイムの最大数（６０フレームで１分）
+constexpr auto PLAY_TIME_MAX = 3600;// プレイ時間（６０フレームで１分）
 
 enum {
 	TUTORIAL, // チュートリアルシーン
@@ -58,7 +58,7 @@ private:
 	// 制限時間をラインで描画用変数
 	// 炎の画像ようの変数
 	// アニメーションさせるため複数個作る
-	int m_flame_image[FIAME_IMAGE_MAX];
+	int m_fiame_image[FIAME_IMAGE_MAX];
 	// 開くカーテン画像用変数
 	int m_curtain_open_image;
 
@@ -72,7 +72,7 @@ private:
 	//------------------------------------------
 	// 
 	// 炎画像の描画座標用の変数
-	Pos m_flame_pos;
+	Pos m_fiame_pos;
 
 	// カーテン画像の描画座標用変数
 	Pos m_curtain_pos;
@@ -85,13 +85,13 @@ private:
 	// ---------------------------------------
 	
 	// 時間経過で描画位置を小さくしていくための変数
-	Pos m_flame_time_pos;
+	Pos m_fiame_time_pos;
 
 	// 炎画像をアニメーションするための変数
 	int m_animation_count;
 
 	// 描画している画像を徐々に減らしていくための数値を入れる用の変数
-	float m_timelimit;
+	float m_timelimt;
 
 	// ゲームの制限時間
 	float m_game_count;
