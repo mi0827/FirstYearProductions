@@ -28,9 +28,9 @@ enum  Scene // 各シーン
 // オブジェクトの宣言
 // -------------------------
 Base base;             //Base タイトルシーンの切り替えをするため
-PlayScene playscene;     // プレイシーン
+PlayScene play_scene;     // プレイシーン
 Title title;           // タイトル
-EndScoene endscene;     // エンディングシーン
+EndScoene end_scene;     // エンディングシーン
 
 // -------------------------
  
@@ -47,8 +47,8 @@ int count = 10;
 void GameInit()
 {
 	title.Init();
-	playscene.Init();
-	endscene.Init();
+	play_scene.Init();
+	end_scene.Init();
 
 }
 
@@ -72,13 +72,13 @@ void GameUpdate()
 		}
 		break;
 	case GAMEMAIN_SCENE:
-		playscene.Update();
-		if (playscene.IsChange()) {
+		play_scene.Update();
+		if (play_scene.IsChange()) {
 			scene_change = 2;
 		}
 		break;
 	case END_SCENE:
-		endscene.Update();
+		end_scene.Update();
 		if (IsKeyOn(KEY_INPUT_SPACE)) {
 			scene_change = 3;
 		}
@@ -116,11 +116,11 @@ void GameDraw()
 		break;
 
 	case GAMEMAIN_SCENE:
-		playscene.Draw();
+		play_scene.Draw();
 		break;
 
 	case END_SCENE:
-		endscene.Draw();
+		end_scene.Draw();
 		DrawString(20, 425, "SKIP >> SPACE", GetColor(255, 255, 255));
 		break;
 	case CLEAN:
@@ -140,6 +140,6 @@ void GameExit()
 {
 	// 各クラスの終了処理
 	title.Exit();
-	playscene.Exit();
-	endscene.Exit();
+	play_scene.Exit();
+	end_scene.Exit();
 }

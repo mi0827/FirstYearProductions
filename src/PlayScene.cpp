@@ -83,25 +83,25 @@ void PlayScene::Init()
 
 	// 制限時間を炎画像で描画するための座標用変数
 	// X座標は０で画面端にする
-	m_fiame_pos.x = 0;
+	m_flame_pos.x = 0;
 
 	// Y座標は描画したい高さに設定
-	m_fiame_pos.y = 390;
+	m_flame_pos.y = 390;
 
 	// 炎画像を時間経過で描画位置を小さくしていくための変数
 	// ｘ座標を増やしていくので最初は０座標にしておく
-	m_fiame_time_pos.x = 0;
+	m_flame_time_pos.x = 0;
 
 	// Ｙ座標は減らしたりはしないが描画するために
 	// 一番下に描画したいため最初は画面いっぱいの座標にしておく
-	m_fiame_time_pos.y = WINDOW_H;
+	m_flame_time_pos.y = WINDOW_H;
 
 	// 炎画像の読み込み
 	// 炎を配列で読み込むための変数
 	char image[64];
 	for (int i = 0; i < FIAME_IMAGE_MAX; i++) {
 		sprintfDx(image, "data/fiame/fiame%d.png", i);
-		m_fiame_image[i] = LoadGraph(image);
+		m_flame_image[i] = LoadGraph(image);
 	}
 
 	// 炎画像をアニメーションするための変数
@@ -110,7 +110,7 @@ void PlayScene::Init()
 
 	// 一秒６０フレームと考えた時の場合
 	// 一分半は５４００フレームなのでそれ割る画面端のｘ座標をして出た数値を入れる
-	m_timelimt = WINDOW_W / 5400.0;
+	m_timelimit = WINDOW_W / 5400.0;
 
 	// 背景画像の読み込み
 	m_bak_image = LoadGraph("data/BG/pipo-bg002.jpg");
@@ -231,7 +231,7 @@ void PlayScene::Update()
 			m_game_count++;
 
 			// 炎の画像の描画画面を大きくしていく（ｘ座標だけ）
-			m_fiame_time_pos.x += m_timelimt;
+			m_flame_time_pos.x += m_timelimit;
 
 			// プレイヤーが動かす弾のクラスの更新処理
 			player.Update();
@@ -265,8 +265,7 @@ void PlayScene::Update()
 			}
 
 			// ゲームの制限に達したらエンドシーンに行く
-			// 60フレーム場合９０秒（１分半）「後々変更予定」
-			if (m_game_count > 5400) {
+			if (m_game_count > PLAY_TIME_MAX) {
 
 
 				// カーテンのアニメーション
@@ -378,7 +377,7 @@ void PlayScene::Draw()
 
 			// 炎の描画
 			// アニメーションする
-			DrawExtendGraphF(m_fiame_pos.x, m_fiame_pos.y, m_fiame_time_pos.x, m_fiame_time_pos.y, m_fiame_image[m_animation_count], TRUE);
+			DrawExtendGraphF(m_flame_pos.x, m_flame_pos.y, m_flame_time_pos.x, m_flame_time_pos.y, m_flame_image[m_animation_count], TRUE);
 
 			// プレイヤーの動かす弾の描画
 			player.Draw();
@@ -449,7 +448,7 @@ void PlayScene::Exit()
 	DeleteGraph(m_curtain_close_image);
 	// 制限時間の炎画像
 	for (int i = 0; i < FIAME_IMAGE_MAX; i++) {
-		DeleteGraph(m_fiame_image[i]);
+		DeleteGraph(m_flame_image[i]);
 	}
 }
 

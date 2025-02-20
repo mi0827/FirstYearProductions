@@ -87,7 +87,7 @@
     <ClInclude Include="src\Base.h">
       <Filter>ヘッダー ファイル\Game\Base</Filter>
     </ClInclude>
-    <ClInclude Include="src\EndScoene.h">
+    <ClInclude Include="src\EndScene.h">
       <Filter>ヘッダー ファイル\Game\Scene</Filter>
     </ClInclude>
     <ClInclude Include="src\HardPlay.h">
@@ -170,7 +170,7 @@
     <ClCompile Include="src\Enemy.cpp">
       <Filter>ソース ファイル\Game\Enemy</Filter>
     </ClCompile>
-    <ClCompile Include="src\EndScoene.cpp">
+    <ClCompile Include="src\EndScene.cpp">
       <Filter>ソース ファイル\Game\Scene</Filter>
     </ClCompile>
     <ClCompile Include="src\MovePlayer.cpp">

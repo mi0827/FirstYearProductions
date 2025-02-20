@@ -4,11 +4,11 @@
 // エンドシーン用クラス
 // ------------------------
 // ゲームが終わった後に行う
-class EndScoene:  public Base {
+class EndScene:  public Base {
 public:
 
-	EndScoene();
-	~EndScoene();
+	EndScene();
+	~EndScene();
 
 	bool IsChange();
 

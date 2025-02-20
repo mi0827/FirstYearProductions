@@ -11,14 +11,14 @@
 #include "NormalPlay.h"
 #include "HardPlay.h"
 #include "PlayScene.h"
-#include "Endscoene.h"
+#include "Endscene.h"
 
-EndScoene::EndScoene()
+EndScene::EndScene()
 {
 
 }
 
-EndScoene::~EndScoene()
+EndScoene::~EndScene()
 {
 }
 
@@ -26,7 +26,7 @@ extern PlayScene playscene;     // プレイシーン
 
 
 // 次のシーンに行くための関数
-bool EndScoene::IsChange()
+bool EndScene::IsChange()
 {
 	return change_;
 }
@@ -35,7 +35,7 @@ bool EndScoene::IsChange()
 //-----------------------
 // 初期設定
 //-----------------------
-void EndScoene::Init()
+void EndScene::Init()
 {
 	// 文字の描画座標
 	m_pos.x = 230;
@@ -72,7 +72,7 @@ void EndScoene::Init()
 //-----------------------
 // 更新処理
 //-----------------------
-void EndScoene::Update()
+void EndScene::Update()
 {
 
 	// bgmの再生
@@ -108,7 +108,7 @@ void EndScoene::Update()
 //-----------------------
 // 描画処理
 //-----------------------
-void EndScoene::Draw()
+void EndScene::Draw()
 {
 	// 画面サイズに合わせて背景画像の描画
 	DrawExtendGraphF(0, 0, WINDOW_W, WINDOW_H, m_bak_image, TRUE);
@@ -124,7 +124,7 @@ void EndScoene::Draw()
 
 }
 
-void EndScoene::Exit()
+void EndScene::Exit()
 {
 	// Bgmの削除
 	DeleteSoundMem(m_bgm);
