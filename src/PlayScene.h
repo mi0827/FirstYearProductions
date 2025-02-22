@@ -5,7 +5,7 @@ constexpr auto CLOSE_CURTAIN_MAX = 18; // カーテンの閉じる画像の数
 constexpr auto GAME_STRAT = 240; // ゲームシーンに行く前の処理を終わらせる値
 constexpr auto GAME_END = 150; // ゲームシーンを終わてる魏の処理を始める値
 constexpr auto FRAME_IMSGE_MAX = 3; // フレーム画像の数
-constexpr auto PLAY_TIME_MAX = 3600;// プレイ時間（６０フレームで１分）
+constexpr float PLAY_TIME_MAX = 3600.0f;// プレイ時間（６０フレームで１分）
 
 enum {
 	TUTORIAL, // チュートリアルシーン

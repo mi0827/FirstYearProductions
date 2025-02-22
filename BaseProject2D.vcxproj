@@ -24,6 +24,7 @@
     <ProjectGuid>{6ea11fb6-b885-41ef-827a-813114a246b5}</ProjectGuid>
     <RootNamespace>BaseProject2D</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>GhostHunter</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

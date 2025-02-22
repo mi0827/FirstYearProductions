@@ -88,12 +88,6 @@ void EasyPlay::Init()
 	// 流す時間を決める変数
 	m_bgm_count = 0;
 
-	//// スコア更新したときに流す効果音
-	//m_update_sound = LoadSoundMem("data/sound/effect/update.mp3");
-
-	//// スコア更新の音を流すかを決める変数
-	//m_sound = false;
-
 	// BGMが流れているかを確認する変数
 	// 最初は流れていない
 	sound_change = true;
@@ -119,7 +113,7 @@ void EasyPlay::Update()
 	sound_change = false;
 	
 
-	if (m_bgm_count > 5400) {
+	if (m_bgm_count > PLAY_TIME_MAX) {
 		// BGMを停止
 		StopSoundMem(m_bgm);
 	}

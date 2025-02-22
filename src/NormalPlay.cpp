@@ -110,7 +110,7 @@ void NormalPlay::Update()
 	sound_change = false;
 	
 
-	if (m_bgm_count > 5400) {
+	if (m_bgm_count > PLAY_TIME_MAX) {
 		// BGM‚ð’âŽ~
 		StopSoundMem(m_bgm);
 	}

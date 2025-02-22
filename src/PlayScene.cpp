@@ -110,7 +110,7 @@ void PlayScene::Init()
 
 	// 一秒６０フレームと考えた時の場合
 	// 一分半は５４００フレームなのでそれ割る画面端のｘ座標をして出た数値を入れる
-	m_timelimt = WINDOW_W / PLAY_TIME_MAX;
+	m_timelimt = (float)WINDOW_W / PLAY_TIME_MAX;
 
 	// 背景画像の読み込み
 	m_bak_image = LoadGraph("data/BG/pipo-bg002.jpg");

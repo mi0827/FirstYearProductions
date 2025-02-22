@@ -28,6 +28,8 @@ public:
 private:
 
 protected:
+	// プレイタイム
+	static constexpr float PLAY_TIME_MAX = 3600.0f;// プレイ時間（６０フレームで１分）
 
 	// 的の数
 	const int m_target_max = 5;
